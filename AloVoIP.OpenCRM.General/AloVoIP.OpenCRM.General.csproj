@@ -2,8 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>AloVoIP</Company>
+    <Authors>AloVoIP</Authors>
+    <Owners>AloVoIP</Owners>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <Description></Description>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <OutputPath>..\.nuget\Publish\</OutputPath>
+  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="Septa.NetStandard.PayamGostarApiClient" Version="1.0.2" />
     <PackageReference Include="Serilog" Version="2.11.0" />
