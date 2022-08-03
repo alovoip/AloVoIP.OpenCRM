@@ -1,13 +1,14 @@
 ﻿using AloVoIP.OpenCRM;
 using AloVoIP.OpenCRM.Dto;
 using AloVoIP.OpenCRM.Enums;
-using Newtonsoft.Json;
-using PayamGostarClient.TelephonySystem;
+using AloVoIP.OpenCRM.General.Enums;
+using AloVoIP.OpenCRM.General.Models;
 using Serilog;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.Json;
 
 namespace AloVoIP.OpenCRM.General
 {
@@ -58,18 +59,18 @@ namespace AloVoIP.OpenCRM.General
                     throw new ArgumentOutOfRangeException();
             }
         }
-        private PayamGostarClient.TelephonySystem.ChannelResponse ConvertToPgChannelResponseType(Enums.ChannelResponse channelResponse)
+        private ChannelResponse ConvertToPgChannelResponseType(ChannelResponse channelResponse)
         {
             switch (channelResponse)
             {
-                case Enums.ChannelResponse.Answered:
-                    return PayamGostarClient.TelephonySystem.ChannelResponse.Answered;
-                case Enums.ChannelResponse.NotAnswered:
-                    return PayamGostarClient.TelephonySystem.ChannelResponse.NotAnswered;
-                case Enums.ChannelResponse.Busy:
-                    return PayamGostarClient.TelephonySystem.ChannelResponse.Busy;
-                case Enums.ChannelResponse.Transfered:
-                    return PayamGostarClient.TelephonySystem.ChannelResponse.Transfered;
+                case ChannelResponse.Answered:
+                    return ChannelResponse.Answered;
+                case ChannelResponse.NotAnswered:
+                    return ChannelResponse.NotAnswered;
+                case ChannelResponse.Busy:
+                    return ChannelResponse.Busy;
+                case ChannelResponse.Transfered:
+                    return ChannelResponse.Transfered;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -107,7 +108,7 @@ namespace AloVoIP.OpenCRM.General
                 {
                     Method = HttpMethod.Post,
                     RequestUri = new Uri(Host),
-                    Content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json")
+                    Content = new StringContent(JsonSerializer.Serialize(model), Encoding.UTF8, "application/json")
                 };
 
                 if (AuthType == AuthType.Basic)
@@ -155,7 +156,7 @@ namespace AloVoIP.OpenCRM.General
                 IsLive = isLive
             };
 
-            var model = new CallRequestDto(CallStoreType.CallCreated, JsonConvert.SerializeObject(data));
+            var model = new CallRequestDto(CallStoreType.CallCreated, JsonSerializer.Serialize(data));
 
 
             CallApi(model);
@@ -180,7 +181,7 @@ namespace AloVoIP.OpenCRM.General
             if (!string.IsNullOrEmpty(profileId))
                 data.IdentityId = new Guid(profileId);
 
-            var model = new CallRequestDto(CallStoreType.CallUpdated, JsonConvert.SerializeObject(data));
+            var model = new CallRequestDto(CallStoreType.CallUpdated, JsonSerializer.Serialize(data));
             CallApi(model);
             return new CallUpdateResultDto();
 
@@ -198,12 +199,12 @@ namespace AloVoIP.OpenCRM.General
                 CreateDate = createDate,
                 IsLive = isLive
             };
-            var model = new CallRequestDto(CallStoreType.CallChannelCreated, JsonConvert.SerializeObject(data));
+            var model = new CallRequestDto(CallStoreType.CallChannelCreated, JsonSerializer.Serialize(data));
             CallApi(model);
             return channelId;
         }
 
-        public void CallChannelUpdated(string channelId, bool isLive, ChannelState channelState, Enums.ChannelResponse channelResponse, DateTime? connectDate, DateTime? hangupDate, string recordedFileName, string toChangePeerName = "", PeerType? toChangePeerType = null)
+        public void CallChannelUpdated(string channelId, bool isLive, ChannelState channelState, ChannelResponse channelResponse, DateTime? connectDate, DateTime? hangupDate, string recordedFileName, string toChangePeerName = "", PeerType? toChangePeerType = null)
         {
             var data = new CallChannelUpdateModel()
             {
@@ -220,19 +221,19 @@ namespace AloVoIP.OpenCRM.General
                                  (TelephonySystemPeerType?)null
             };
 
-            var model = new CallRequestDto(CallStoreType.CallChannelUpdated, JsonConvert.SerializeObject(data));
+            var model = new CallRequestDto(CallStoreType.CallChannelUpdated, JsonSerializer.Serialize(data));
             CallApi(model);
         }
 
         public void MergeCall(string tsKey, long sourceCallId, long destCallId)
         {
-            var data = new Septa.PayamGostarApiClient.TelephonySystem.CallMergeModel()
+            var data = new CallMergeModel()
             {
                 TsKey = tsKey,
                 SourceCallId = sourceCallId,
                 DestinationCallId = destCallId,
             };
-            var model = new CallRequestDto(CallStoreType.MergeCall, JsonConvert.SerializeObject(data));
+            var model = new CallRequestDto(CallStoreType.MergeCall, JsonSerializer.Serialize(data));
             CallApi(model);
         }
     }

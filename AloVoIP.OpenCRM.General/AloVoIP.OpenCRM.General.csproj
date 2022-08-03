@@ -8,7 +8,8 @@
     <Version>1.0.0</Version>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
-    <Description></Description>
+    <RepositoryUrl>https://github.com/alovoip/AloVoIP.OpenCRM</RepositoryUrl>
+	<Description>The simple Rest implementation of AloVoIP OpenCRM contracts with supporting basic authemtication</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -18,12 +19,8 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Septa.NetStandard.PayamGostarApiClient" Version="1.0.2" />
     <PackageReference Include="Serilog" Version="2.11.0" />
-    <PackageReference Include="System.ServiceModel.Duplex" Version="4.9.0" />
-    <PackageReference Include="System.ServiceModel.Http" Version="4.9.0" />
-    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.9.0" />
-    <PackageReference Include="System.ServiceModel.Security" Version="4.9.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.5" />
   </ItemGroup>
 
   <ItemGroup>
