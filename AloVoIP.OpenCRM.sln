@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloVoIP.OpenCRM", "..\AloVoipStable\LookupSource\AloVoIP.OpenCRM\AloVoIP.OpenCRM.csproj", "{40BF9CBE-861A-4B7B-B456-F9B648A0AD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloVoIP.OpenCRM", "AloVoIP.OpenCRM\AloVoIP.OpenCRM.csproj", "{535F6602-AF95-4A3D-AB3C-4E5626C7BE3C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloVoIP.OpenCRM.General", "..\AloVoipStable\LookupSource\AloVoIP.OpenCRM.General\AloVoIP.OpenCRM.General.csproj", "{766FE08C-DC53-43FA-9B60-B555FC4A88B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AloVoIP.OpenCRM.General", "AloVoIP.OpenCRM.General\AloVoIP.OpenCRM.General.csproj", "{E138BC33-A756-407D-9578-B92D35389E8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{40BF9CBE-861A-4B7B-B456-F9B648A0AD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40BF9CBE-861A-4B7B-B456-F9B648A0AD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40BF9CBE-861A-4B7B-B456-F9B648A0AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40BF9CBE-861A-4B7B-B456-F9B648A0AD47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{766FE08C-DC53-43FA-9B60-B555FC4A88B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{766FE08C-DC53-43FA-9B60-B555FC4A88B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{766FE08C-DC53-43FA-9B60-B555FC4A88B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{766FE08C-DC53-43FA-9B60-B555FC4A88B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535F6602-AF95-4A3D-AB3C-4E5626C7BE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535F6602-AF95-4A3D-AB3C-4E5626C7BE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535F6602-AF95-4A3D-AB3C-4E5626C7BE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535F6602-AF95-4A3D-AB3C-4E5626C7BE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E138BC33-A756-407D-9578-B92D35389E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E138BC33-A756-407D-9578-B92D35389E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E138BC33-A756-407D-9578-B92D35389E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E138BC33-A756-407D-9578-B92D35389E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
