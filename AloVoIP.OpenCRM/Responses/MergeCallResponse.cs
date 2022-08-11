@@ -2,6 +2,6 @@
 {
     public class MergeCallResponse
     {
-        bool Merged { set; get; }
+       public bool Merged { set; get; }
     }
 }

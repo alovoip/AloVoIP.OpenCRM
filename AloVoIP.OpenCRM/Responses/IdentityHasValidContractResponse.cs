@@ -1,13 +1,7 @@
-﻿namespace AloVoIP.OpenCRM
+﻿namespace AloVoIP.OpenCRM.Responses
 {
     public class IdentityHasValidContractResponse
     {
-        bool IsValid { get; set; }
-    }
-
-    public class CrmObjectUrlResponse
-    {
-        string Id { get; set; }
-        string Url { get; set; }
+        public bool IsValid { get; set; }
     }
 }

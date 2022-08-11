@@ -2,6 +2,6 @@
 {
     public class CustomerBalanceResponse
     {
-        decimal? Balance { get; set; }
+        public decimal? Balance { get; set; }
     }
 }

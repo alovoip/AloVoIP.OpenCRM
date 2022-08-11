@@ -6,6 +6,6 @@ namespace AloVoIP.OpenCRM.Responses
 {
     public class CallChannelUpdateResponse
     {
-        string CallChannelId { set; get; }
+        public string CallChannelId { set; get; }
     }
 }

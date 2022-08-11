@@ -2,6 +2,6 @@
 {
     public class SendPaymentLinkToUserResponse
     {
-        bool IsSuccess { get; set; }
+      public bool IsSuccess { get; set; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public class UserExtensionResponse
     {
-        string Extension { get; set; }
+       public string Extension { get; set; }
     }
 }

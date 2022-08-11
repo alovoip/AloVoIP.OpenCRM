@@ -5,6 +5,6 @@ namespace AloVoIP.OpenCRM
 {
     public class MoneyAccountsResponse
     {
-        List<MoneyAccountResponse> MoneyAccounts { get; set; }
+        public List<MoneyAccountResponse> MoneyAccounts { get; set; }
     }
 }

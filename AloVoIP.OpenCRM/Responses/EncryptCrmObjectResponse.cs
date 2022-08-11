@@ -4,6 +4,6 @@ namespace AloVoIP.OpenCRM
 {
     public class EncryptCrmObjectResponse
     {
-        Task<string> EncryptedObject { get; set; }
+        public Task<string> EncryptedObject { get; set; }
     }
 }

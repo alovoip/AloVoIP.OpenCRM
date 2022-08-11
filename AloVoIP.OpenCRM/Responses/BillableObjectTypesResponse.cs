@@ -5,6 +5,6 @@ namespace AloVoIP.OpenCRM
 {
     public class BillableObjectTypesResponse
     {
-        List<CrmObjectTypeResponse> CRMObjectTypes { get; set; }
+        public List<CrmObjectTypeResponse> CRMObjectTypes { get; set; }
     }
 }
