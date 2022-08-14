@@ -1,6 +1,5 @@
 ﻿using AloVoIP.OpenCRM.Requests;
 using AloVoIP.OpenCRM.Responses;
-using AloVoIP.OpenCRM.Requests;
 using Refit;
 using System;
 using System.Threading.Tasks;
@@ -10,7 +9,7 @@ namespace AloVoIP.OpenCRM.General.Contracts
     public interface IHttpLookupSourceService : IHttpCallStoreService, IDisposable
     {
         [Post("/GetMoneyAccounts")]
-        Task<MoneyAccountResponse> GetMoneyAccounts();
+        Task<MoneyAccountsResponse> GetMoneyAccounts();
 
         [Post("/GetBillableObjectTypes")]
         Task<BillableObjectTypesResponse> GetBillableObjectTypes();

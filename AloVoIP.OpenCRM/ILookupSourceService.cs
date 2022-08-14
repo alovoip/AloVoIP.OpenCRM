@@ -23,7 +23,7 @@ namespace AloVoIP.OpenCRM
         Task<CardtableResponse> GetCardtable(CardtableRequest cardtableRequest);
         
         Task<BillableObjectTypesResponse> GetBillableObjectTypes();
-        Task<MoneyAccountResponse> GetMoneyAccounts();
+        Task<MoneyAccountsResponse> GetMoneyAccounts();
 
         Task<CreateInvoiceResponse> CreateInvoice(CreateSalesInvoiceRequest createSalesInvoiceRequest);
         Task<EncryptCrmObjectResponse> EncryptCrmObjectAsync(EncryptCrmObjectRequest encryptCrmObjectRequest);

@@ -97,7 +97,7 @@ namespace AloVoIP.OpenCRM.General
             }
         }
 
-        public async Task<MoneyAccountResponse> GetMoneyAccounts()
+        public async Task<MoneyAccountsResponse> GetMoneyAccounts()
         {
             using (var client = CreateClient())
             {
