@@ -18,7 +18,7 @@ namespace AloVoIP.OpenCRM.General
         protected string Password { get; }
         protected AuthType AuthType { get; }
 
-        public virtual string CallStoreId { get; set; }
+        public virtual string CallStoreId { get; }
 
 
         public GeneralCallStoreService(string callStoreId, string host, string username, string password, AuthType authType)

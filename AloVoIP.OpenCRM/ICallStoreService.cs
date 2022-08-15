@@ -6,7 +6,7 @@ namespace AloVoIP.OpenCRM
 {
     public interface ICallStoreService
     {
-        string CallStoreId { get; set; }
+        string CallStoreId { get; }
         Task<CallCreateResponse> CallCreated(CallCreateRequest callCreateRequest);
         Task<CallUpdateResponse> CallUpdated(CallUpdateRequest callUpdateRequest);
         Task<CallChannelCreateResponse> CallChannelCreated(CallChannelCreateRequest callChannelCreateRequest);

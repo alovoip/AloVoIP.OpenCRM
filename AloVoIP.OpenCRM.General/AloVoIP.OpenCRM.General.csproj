@@ -5,9 +5,9 @@
     <Company>AloVoIP</Company>
     <Authors>AloVoIP</Authors>
     <Owners>AloVoIP</Owners>
-    <Version>1.1.2</Version>
-    <AssemblyVersion>1.1.2</AssemblyVersion>
-    <FileVersion>1.1.2</FileVersion>
+    <Version>1.1.3</Version>
+    <AssemblyVersion>1.1.3</AssemblyVersion>
+    <FileVersion>1.1.3</FileVersion>
     <RepositoryUrl>https://github.com/alovoip/AloVoIP.OpenCRM</RepositoryUrl>
 	<Description>The simple Rest implementation of AloVoIP OpenCRM contracts with supporting basic authemtication</Description>
   </PropertyGroup>
