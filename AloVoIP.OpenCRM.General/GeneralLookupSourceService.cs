@@ -178,5 +178,22 @@ namespace AloVoIP.OpenCRM.General
             }
         }
 
+        public async Task<SubmitQueueOperatorVotingResponse> SubmitQueueOperatorVoting(SubmitQueueOperatorVotingRequest submitQueueOperatorVotingRequest)
+        {
+            using (var client = CreateClient())
+            {
+                var api = RestService.For<IHttpLookupSourceService>(client);
+                return await api.SubmitQueueOperatorVoting(submitQueueOperatorVotingRequest);
+            }
+        }
+
+        public async Task<SubmitVotingResponse> SubmitVoting(SubmitVotingRequest submitVotingRequest)
+        {
+            using (var client = CreateClient())
+            {
+                var api = RestService.For<IHttpLookupSourceService>(client);
+                return await api.SubmitVoting(submitVotingRequest);
+            }
+        }
     }
 }

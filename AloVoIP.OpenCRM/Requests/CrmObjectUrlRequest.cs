@@ -9,5 +9,5 @@ namespace AloVoIP.OpenCRM.Requests
         public string Id { get; set; }
         public string Type { get; set; }
         public string IdentityId { get; set; }
-    }
+    }  
 }
