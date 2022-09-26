@@ -5,9 +5,9 @@
     <Company>AloVoIP</Company>
     <Authors>AloVoIP</Authors>
     <Owners>AloVoIP</Owners>
-    <Version>1.1.5</Version>
-    <AssemblyVersion>1.1.5</AssemblyVersion>
-    <FileVersion>1.1.5</FileVersion>
+    <Version>1.1.6</Version>
+    <AssemblyVersion>1.1.6</AssemblyVersion>
+    <FileVersion>1.1.6</FileVersion>
 	<RepositoryUrl>https://github.com/alovoip/AloVoIP.OpenCRM</RepositoryUrl>
     <Description>The core interfaces and contracts that any CRM or ERP should implements them for integrating with AloVoIP Telephony system modules</Description>
   </PropertyGroup>

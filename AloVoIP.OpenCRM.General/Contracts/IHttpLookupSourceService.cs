@@ -61,5 +61,11 @@ namespace AloVoIP.OpenCRM.General.Contracts
 
         [Post("/IdentityHasValidContract")]
         Task<CrmObjectUrlResponse> GetCrmObjectUrl(CrmObjectUrlRequest crmObjectUrlRequest);
+        
+        [Post("/SubmitQueueOperatorVoting")]
+        Task<SubmitQueueOperatorVotingResponse> SubmitQueueOperatorVoting(SubmitQueueOperatorVotingRequest submitQueueOperatorVotingRequest);
+        
+        [Post("/SubmitVoting")]
+        Task<SubmitVotingResponse> SubmitVoting(SubmitVotingRequest submitVotingRequest);
     }
 }

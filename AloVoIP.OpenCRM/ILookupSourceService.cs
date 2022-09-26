@@ -1,7 +1,6 @@
 ﻿using AloVoIP.OpenCRM.Requests;
 using AloVoIP.OpenCRM.Responses;
-using System;
-using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace AloVoIP.OpenCRM
@@ -31,5 +30,8 @@ namespace AloVoIP.OpenCRM
         Task<PaymentResponse> GetPaymentInfo(PaymentInfoRequest paymentInfoRequest);
         Task<SendPaymentLinkToUserResponse> SendPaymentLinkToUser(SendPaymentLinkToUserRequest sendPaymentLinkToUserRequest);
         Task<CrmObjectUrlResponse> GetCrmObjectUrl(CrmObjectUrlRequest crmObjectUrlRequest);
+        
+        Task<SubmitQueueOperatorVotingResponse> SubmitQueueOperatorVoting(SubmitQueueOperatorVotingRequest submitQueueOperatorVotingRequest);
+        Task<SubmitVotingResponse> SubmitVoting(SubmitVotingRequest submitVotingRequest);
     }
 }
