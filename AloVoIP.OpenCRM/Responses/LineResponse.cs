@@ -1,4 +1,5 @@
-﻿using AloVoIP.OpenCRM.Enums;
+﻿using SeptaKit.TelephonyServer.Enums;
+
 namespace AloVoIP.OpenCRM.Responses
 {
     public class LineResponse
@@ -10,6 +11,5 @@ namespace AloVoIP.OpenCRM.Responses
         public bool IsActive { get; set; }
         public bool IsOnline { get; set; }
         public MediaType MediaType { get; set; }
-
     }
 }

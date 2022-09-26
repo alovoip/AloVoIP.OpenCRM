@@ -17,5 +17,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <OutputPath>..\.nuget\Publish\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SetpaKit\SeptaKit.TelephonyServer\SeptaKit.TelephonyServer.csproj" />
+  </ItemGroup>
   
 </Project>

@@ -1,7 +1,5 @@
-﻿using AloVoIP.OpenCRM.Enums;
+﻿using SeptaKit.TelephonyServer.Enums;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AloVoIP.OpenCRM.Requests
 {

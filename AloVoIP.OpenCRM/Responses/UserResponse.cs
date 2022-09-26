@@ -1,4 +1,4 @@
-﻿using AloVoIP.OpenCRM.Enums;
+﻿using SeptaKit.TelephonyServer.Enums;
 
 namespace AloVoIP.OpenCRM.Responses
 {
