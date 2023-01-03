@@ -1,8 +1,8 @@
-﻿using AloVoIP.OpenCRM.General.Contracts;
+﻿using AloVoIP.OpenCRM.Enums;
+using AloVoIP.OpenCRM.General.Contracts;
 using AloVoIP.OpenCRM.Requests;
 using AloVoIP.OpenCRM.Responses;
 using Refit;
-using SeptaKit.TelephonyServer.Enums;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
