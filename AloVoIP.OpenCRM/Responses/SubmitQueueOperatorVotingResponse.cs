@@ -3,4 +3,5 @@
     public class SubmitQueueOperatorVotingResponse
     {
         int Id { get; set; }
-    }  }
+    }
+}
