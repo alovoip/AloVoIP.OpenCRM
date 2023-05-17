@@ -10,8 +10,9 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |CustomerRequest | |Yes|  یک درخواست که شامل CustomerNo:شماره مشتری and CustomerId:شناسه منحصر به فرد مشتری است|
 |BillableObjectTypeKey |String |Yes | کلید زیرنوع دریافت در شخصی سازی آیتم|
@@ -33,6 +34,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -43,12 +45,14 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|IdentityId|? |? | ? |
+|Amount|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

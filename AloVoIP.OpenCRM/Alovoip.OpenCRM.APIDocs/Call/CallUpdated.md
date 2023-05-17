@@ -10,8 +10,9 @@ Get the details of the call Updating in AloVoip.
 
 
 ## Data constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |CallId |String|Yes|  شناسه منحصر به فرد تماس|
 |IsLive |Boolean |Yes | وضعیت زنده بودن تماس|
@@ -37,6 +38,7 @@ Get the details of the call Updating in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -46,12 +48,16 @@ Get the details of the call Updating in AloVoip.
     "IdentityName": ""
 }
 ```
+With the following parameters:
 
+|Parameters|Type|Mandatory|Description|
+|-|-|-|-| 
+|IdentityId|? |? | ? |
+|IdentityName|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
 
-` ` 
 
 

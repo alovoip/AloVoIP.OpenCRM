@@ -10,9 +10,10 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
-|-|-|-|-| 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-|  
 |CrmObjectTypeKey |String|Yes|  کلید زیرنوع آیتم در شخصی سازی |
 |IdentityId |String |Yes | شناسه منحصر به فرد پروفایل مرتبط|
 
@@ -27,6 +28,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -37,12 +39,13 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|TotalItemsCount|? |? | ? |
+|CardtableItems|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
-

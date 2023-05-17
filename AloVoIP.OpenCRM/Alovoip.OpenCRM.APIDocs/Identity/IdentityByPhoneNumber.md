@@ -10,8 +10,9 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |PhoneNumber |String|Yes|  شماره موبایل مشتری|
 
@@ -25,6 +26,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -37,12 +39,18 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|ContinuedNumber|? |? | ? |
+|Extension|? |? | ? |
+|PhoneNumber|? |? | ? |
+|PhoneType|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
 
-` ` 
 
 

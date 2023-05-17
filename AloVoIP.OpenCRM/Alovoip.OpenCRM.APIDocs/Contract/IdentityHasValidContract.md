@@ -10,8 +10,9 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |CustomerRequest | |Yes|  یک درخواست که شامل CustomerNo:شماره مشتری and CustomerId:شناسه منحصر به فرد مشتری است|
 |ContractKey |String |Yes |کلید تعریف شده در شخصی‌سازی آیتم قرارداد |
@@ -28,6 +29,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -37,7 +39,11 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|IsValid|? |? | ? |
 ## Error Response
 
 **Condition** : 

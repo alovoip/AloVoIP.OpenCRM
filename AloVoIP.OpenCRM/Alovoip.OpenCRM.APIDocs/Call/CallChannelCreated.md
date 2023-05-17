@@ -10,9 +10,9 @@ Get the details of the call channel creation in AloVoip.
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |CallId|String|Yes| شناسه منحصر به فرد تماس |
 |IsLive |Boolean |Yes |وضعیت تماس هنوز در حال مکالمه است یا نه |
@@ -38,21 +38,26 @@ Get the details of the call channel creation in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
 ```json
 {
-
     "CallChannelId": "",
 }
 ```
+With the following parameters:
+
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|CallChannelId|? |? | ? |
 
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
 
-` ` 
+
 
 

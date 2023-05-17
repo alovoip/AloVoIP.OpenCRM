@@ -10,9 +10,9 @@ Get the details of the call creation in AloVoip.
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |TsKey|String|Yes|  کلید منحصر به فرد سیستم تلفنی|
 |IsLive |Boolean |Yes | وضعیت زنده بودن تماس|
@@ -44,6 +44,7 @@ Get the details of the call creation in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -56,12 +57,16 @@ Get the details of the call creation in AloVoip.
     "IdentityName": ""
 }
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|CallId|? |? | ? |
+|InitCallChannelId|? |? | ? |
+|IdentityId|? |? | ? |
+|IdentityName|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

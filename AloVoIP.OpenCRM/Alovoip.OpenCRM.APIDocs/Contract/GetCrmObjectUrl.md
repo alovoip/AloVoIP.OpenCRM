@@ -10,9 +10,9 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |Id |String|Yes| شناسه منحصر به فرد CRM Object |
 |Type |String |Yes | نوع سی ار ام ابجکت|
@@ -25,12 +25,12 @@
 {
      "Id": "[]",
      "Type": "[]",
-     "IdentityId": "[]",
-     
+     "IdentityId": "[]",   
 }
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -42,12 +42,14 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|Id|? |? | ? |
+|Url|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

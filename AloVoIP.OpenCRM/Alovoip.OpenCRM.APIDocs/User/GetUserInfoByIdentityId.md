@@ -10,8 +10,9 @@ Get the details of the invoice creation in AloVoip.
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |IdentityId |String|Yes|  شناسه منحصر به فرد پروفایل مرتبط|
 
@@ -25,6 +26,7 @@ Get the details of the invoice creation in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -34,12 +36,14 @@ Get the details of the invoice creation in AloVoip.
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|??|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
 
 

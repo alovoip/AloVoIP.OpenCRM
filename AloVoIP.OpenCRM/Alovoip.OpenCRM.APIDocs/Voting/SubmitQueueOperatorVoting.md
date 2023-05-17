@@ -11,9 +11,10 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
-|-|-|-|-| 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-|
 |QueueVotingResultId| Long| Yes| شناسه منحصر به فرد نظر ثبت شده|
 |CreateDate | | | تاریخ ثبت نظر|
 |ModuleCode | | | کد ماژول نظرسنجی|
@@ -44,21 +45,23 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
 ```json
 {
-    "????": ""
+    "IntId": ""
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|IntId|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

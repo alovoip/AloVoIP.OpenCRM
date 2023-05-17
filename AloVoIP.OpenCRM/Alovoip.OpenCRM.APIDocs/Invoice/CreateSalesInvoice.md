@@ -10,12 +10,13 @@ Get the details of the invoice creation in AloVoip.
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
 ???
             ExtendedProperties = new List<ExtendedPropertiesRequest>();
             ProductDetails = new List<ProductDetailsRequest>();
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |CrmId |String|Yes| شناسه منحصر به فرد فاکتور فروش در CRM |
 |CrmObjectTypeCode |String |Yes | کد زیرنوع فاکتور فروش در CRM|
@@ -68,6 +69,7 @@ Get the details of the invoice creation in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -77,12 +79,12 @@ Get the details of the invoice creation in AloVoip.
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|InvoiceId|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
-

@@ -10,8 +10,9 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |BillableObjectTypeKey |String|Yes| کلید زیرنوع دریافت در شخصی سازی آیتم |
 
@@ -25,6 +26,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -34,12 +36,14 @@
 }
 
 ```
+With the following parameters:
+
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|CRMObjectTypes|? |? | ? |
 
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

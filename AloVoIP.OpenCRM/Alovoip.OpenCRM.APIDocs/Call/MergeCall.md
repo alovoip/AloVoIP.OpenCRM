@@ -11,8 +11,9 @@ Get the details of the call merging in AloVoip.
 
 
 ## Data constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
+|Parameter|Type|Mandatory|Description|
 |-|-|-|-| 
 |TsKey |String|Yes|  شناسه منحصر به فرد سیستم تلفنی|
 |SourceCallId |Long |Yes | شناسه منحصر به فرد تماس مبدا|
@@ -29,6 +30,7 @@ Get the details of the call merging in AloVoip.
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -37,12 +39,13 @@ Get the details of the call merging in AloVoip.
     "Merged": ""
 }
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|Merged|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 

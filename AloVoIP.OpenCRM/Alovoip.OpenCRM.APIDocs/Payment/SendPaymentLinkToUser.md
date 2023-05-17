@@ -10,9 +10,10 @@
 **Auth required** : `true`
 
 ## Data Constraints
+With the following parameters you can send your request:
 
-|Name|Type|Mandatory|Description|
-|-|-|-|-| 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-|
 |PaymentInfo | |Yes|  مشخصات پرداخت که شامل IdentityId: شناسه منحصر به فرد مشتری  , Amount:  مبلغ پرداختی|
 |MobileNumber |String |Yes |شماره موبایل مشتری|
 |MoneyAccountUserKey |String |Yes | |کلید حساب مالی کاربر
@@ -31,6 +32,7 @@
 ```
 
 ## Success Response
+If successful, you will receive back this response:
 
 **Code** : `200 OK`
 
@@ -41,12 +43,14 @@
 }
 
 ```
+With the following parameters:
 
+|Parameter|Type|Mandatory|Description|
+|-|-|-|-| 
+|IsSuccess|? |? | ? |
+|Message|? |? | ? |
 ## Error Response
 
 **Condition** : 
 **Code** : `400 BAD REQUEST`
-
-` ` 
-
 
