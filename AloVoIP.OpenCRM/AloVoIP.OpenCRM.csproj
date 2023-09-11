@@ -5,9 +5,9 @@
     <Company>AloVoIP</Company>
     <Authors>AloVoIP</Authors>
     <Owners>AloVoIP</Owners>
-    <Version>1.1.9</Version>
-    <AssemblyVersion>1.1.9</AssemblyVersion>
-    <FileVersion>1.1.9</FileVersion>
+    <Version>1.1.10</Version>
+    <AssemblyVersion>1.1.10</AssemblyVersion>
+    <FileVersion>1.1.10</FileVersion>
 	<RepositoryUrl>https://github.com/alovoip/AloVoIP.OpenCRM</RepositoryUrl>
     <Description>The core interfaces and contracts that any CRM or ERP should implements them for integrating with AloVoIP Telephony system modules</Description>
   </PropertyGroup>
@@ -17,5 +17,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <OutputPath>..\.nuget\Publish\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SeptaKit.TelephonyServer" Version="1.0.3" />
+  </ItemGroup>
   
 </Project>

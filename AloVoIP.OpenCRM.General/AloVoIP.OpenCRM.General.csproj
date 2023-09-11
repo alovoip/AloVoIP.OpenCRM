@@ -5,11 +5,11 @@
     <Company>AloVoIP</Company>
     <Authors>AloVoIP</Authors>
     <Owners>AloVoIP</Owners>
-    <Version>1.1.9</Version>
-    <AssemblyVersion>1.1.9</AssemblyVersion>
-    <FileVersion>1.1.9</FileVersion>
+    <Version>1.1.10</Version>
+    <AssemblyVersion>1.1.10</AssemblyVersion>
+    <FileVersion>1.1.10</FileVersion>
     <RepositoryUrl>https://github.com/alovoip/AloVoIP.OpenCRM</RepositoryUrl>
-	<Description>The simple Rest implementation of AloVoIP OpenCRM contracts with supporting basic authemtication</Description>
+	<Description>The simple Rest implementation of AloVoIP OpenCRM contracts with supporting basic authentication</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -19,9 +19,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Refit" Version="6.3.2" />
-    <PackageReference Include="Serilog" Version="2.11.0" />
-    <PackageReference Include="System.Text.Json" Version="6.0.6" />
+    <PackageReference Include="Refit" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
